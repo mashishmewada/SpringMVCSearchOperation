@@ -14,11 +14,22 @@ public class SearchController {
 		return "home";
 	}
 	
+//	@RequestMapping("/search")
+//	public RedirectView search(@RequestParam("quarybox") String query) {
+//		String url = "https://www.google.com/search?q="+query;
+//		RedirectView redirectView = new RedirectView();
+//		redirectView.setUrl(url);
+//		
+//		return redirectView;
+//		
+//	}
+	
 	@RequestMapping("/search")
 	public RedirectView search(@RequestParam("quarybox") String query) {
-		String url = "https://www.google.com/search?q="+query;
+		//String url;
 		RedirectView redirectView = new RedirectView();
-		redirectView.setUrl(url);
+		
+		redirectView.setUrl("https://www.google.com/search?q="+query);
 		
 		return redirectView;
 		
