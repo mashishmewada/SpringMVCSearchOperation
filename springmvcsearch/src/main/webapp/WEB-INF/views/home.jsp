@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!doctype html>
 <html lang="en">
 <head>
@@ -12,9 +13,14 @@
 	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
 	crossorigin="anonymous">
 
+<link href='<c:url value="/recources/css/style.css" />' >
+<script src='<c:url value="/recources/js/script.js" />'></script>
+
 <title>Hello, world!</title>
 </head>
 <body>
+
+<img alt="my image" src='<c:url value="/recources/image/pic.png" />'>
 	<div class="container">
 		<div class="card mx-auto mt-5 bg-secondary" style="width: 50%">
 			<div class="card-body py-5">
