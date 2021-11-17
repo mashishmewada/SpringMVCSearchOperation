@@ -1,3 +1,4 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,11 +21,15 @@
 	<div class="container mt-4">
 
 		<div class="row">
-			<div class="col-md-6 offset-md-3">
+			<div class="col-md-8 offset-md-2">
 				<div class="card">
 					<div class="card-body">
 						<h3 class="text-center">Complex form</h3>
-
+						
+						<div class="alert alert-danger" role="alert">
+						<form:errors path="student.*" />
+						</div>
+							
 						<form action="handle" method="POST">
 
 							<div class="form-group">
@@ -45,10 +50,40 @@
 									id="exampleFormControlInput1" placeholder="Enter ID">
 							</div>
 
+							<p>Your address</p>
+							<div class="card">
+								<div class="card-body form-row">
+									<div class="col-md-4 mb-3">
+										<label for="exampleFormControlInput1"></label><input
+											name="address.street" type="text" class="form-control"
+											placeholder="Street" required>
+									</div>
+									<div class="col-md-4 mb-3">
+										<label for="exampleFormControlInput1"></label><input
+											name="address.city" type="text" class="form-control"
+											placeholder="City" required>
+									</div>
+
+									<div class="col-md-4 mb-3">
+										<label for="exampleFormControlInput1"></label><input
+											name="address.state" type="text" class="form-control"
+											placeholder="State" required>
+									</div>
+
+									<div class="col-md-4 mb-3">
+										<label for="exampleFormControlInput1"></label><input
+											name="address.zip" type="text" class="form-control"
+											placeholder="Zip" required>
+									</div>
+
+								</div>
+
+							</div>
+
 							<div class="form-group">
 								<label for="exampleFormControlInput1">Enter your DOB</label> <input
-									name="dob" type="text" class="form-control"
-									id="exampleFormControlInput1" placeholder="dd/mm/yyyy">
+									name="dob" type="date" class="form-control"
+									id="exampleFormControlInput1">
 							</div>
 
 							<div class="form-group">
@@ -56,6 +91,8 @@
 									name="courses" class="form-control"
 									id="exampleFormControlSelect1" multiple="multiple">
 									<option selected disabled="disabled">Select Course</option>
+									<option>C</option>
+									<option>C++</option>
 									<option>Java</option>
 									<option>Python</option>
 									<option>Spring Framework</option>
