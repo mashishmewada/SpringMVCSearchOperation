@@ -13,17 +13,22 @@
 	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
 	crossorigin="anonymous">
 
-<link href='<c:url value="/recources/css/style.css" />' >
-<script src='<c:url value="/recources/js/script.js" />'></script>
+<%-- <link href='<c:url value="/recources/css/style.css" />' >
+<script src='<c:url value="/recources/js/script.js" />'></script> --%>
 
 <title>Hello, world!</title>
 </head>
 <body>
 
-<img alt="my image" src='<c:url value="/recources/image/pic.png" />'>
+<%-- <img alt="my image" src='<c:url value="/recources/image/pic.png" />'>
+ --%>
 	<div class="container">
+	
+	<h1 class="text-center m-4">This is my home page</h1>
+	
 		<div class="card mx-auto mt-5 bg-secondary" style="width: 50%">
 			<div class="card-body py-5">
+			
 				<h3 class="text-center text-white"
 					style="text-transform: uppercase;">My Search</h3>
 					
