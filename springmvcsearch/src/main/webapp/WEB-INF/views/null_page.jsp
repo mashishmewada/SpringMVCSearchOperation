@@ -33,7 +33,8 @@
 								<h2>${msg}</h2>
 								<h2>Something went wrong, Please try again later !!</h2>
 								<h3>
-									<a href="home.jsp" class="yes">BACK TO HOME</a>
+									<a href="${pageContext.request.contextPath }/" class="yes">BACK
+										TO HOME</a>
 								</h3>
 							</div>
 
