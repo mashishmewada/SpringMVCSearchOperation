@@ -18,11 +18,11 @@ public class FileUploadController {
 	@RequestMapping("/fileform")
 	public String showUploadForm() {
 		
-		/*
-		 * //create internal server error 500 
-		 * String str = null;
-		 * System.out.println(str.charAt(0));
-		 */
+		
+		  //create internal server error 500 
+		  String str = null;
+		  System.out.println(str.charAt(0));
+		 
 		
 		return "fileform";
 
